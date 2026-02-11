@@ -1,0 +1,887 @@
+@charset UTF-8;
+
+*{
+    box-sizing:border-box; /*余白や線を幅や高さに含める*/
+}
+
+img{
+    max-width:100%; /*画像が親要素からはみ出すのを防ぐ*/
+    height:auto;
+}
+
+body {
+    font-family: "小塚ゴシック Pr6N","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	color:#555;
+	background-color: #fff;
+	margin: 0;
+}
+
+	/*ヘッダー*/
+
+.test-logo{
+	display: flex;
+	justify-content: flex-start;  /*左寄せ*/
+	align-items: center;
+	padding-left:12px;
+}
+
+.faq_button{
+	display: flex;
+	gap: 0;
+	align-items: center; /*上下中央*/
+	padding-right:12px;
+	margin-left: auto;
+}
+
+
+.text-nav,.text-nav2{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	font-size: 22px;
+	color:#555;
+	background-color: #dfe8df;
+	padding:24px 40px 0 40px;
+	text-align:center;
+}
+
+a{
+	text-decoration: none;
+	color:#555;
+}
+.text-nav2{
+	font-size: 12px;
+	padding: 2px 80px 24px 64px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+	/*メインビジュアル*/
+
+.main{
+	position:relative;
+	text-align:center;
+}
+
+.main_text{
+	position:absolute;
+	z-index:1;
+	bottom:200px;
+	left:40px;
+	width:80%;
+}
+
+	/*代表あいさつ*/		/*訂正しています*/
+
+.message {
+	position: relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.message img{
+	width:100%;
+	height:auto;
+}
+.message p {	
+	position: absolute;
+	max-width:80%;
+	padding:40px 20px;
+	text-align:center;
+	line-height:2.0;
+	font-family:"Klee One"
+}
+
+.align-right {
+	padding:0 0 0 60%;
+	line-height:2.2;
+}
+
+.message img {
+	width: 100%;
+}
+
+h2{
+		margin:120px auto 64px auto;
+		text-align:center;
+		background-color: #eff2ef;
+		width:100%;
+		height:60px;
+		padding:5px
+}
+
+h2:before {
+	content: attr(data-en);
+	display: block;
+	margin-bottom: 8px;
+	font-size: 22px;
+	letter-spacing: 0.5em;
+	text-shadow: 1px 1px 2px silver;
+	background-color: #eff2ef;
+	font-family:"Gill Sans";
+}
+		
+	/*商品を探す*/		
+		
+.item{
+	background-color: #eff2ef;
+	font-family:"Gill Sans";
+	width:auto;
+	height:70px;
+	letter-spacing: 0.5em;
+	text-shadow: 1px 1px 2px silver;
+	font-size:22px;
+	margin:auto;
+	padding:10px 0 10px 0;
+	display: block;
+}
+
+h3{
+	margin:64px 0 10px 32px;
+	width:100%;
+	height:60px;
+	position:relative;
+	text-align:left;
+}
+		
+	h3:before {
+		content: attr(data-en);
+		display: block;
+		margin-bottom: 8px;
+		font-size: 22px;
+		letter-spacing: 0.5em;
+		text-shadow: 1px 1px 2px silver;
+		font-family:"Gill Sans";
+		text-align:left;
+		}
+		
+		h3::after {
+			position:absolute;
+			content:"";
+			background-color:silver;
+			width:1160px;
+			height:4px;
+			bottom:30px;
+			left:18%;
+			
+		}
+		
+		
+	/*シリーズ*/
+		
+.series{
+	padding-top:32px;
+	width:100%;
+	gap:5px;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+}
+
+
+
+		
+.card_img{
+	width:100%;
+}
+
+.series_linen,.series_white,.series_amber{
+	text-align:center;
+	position:relative;
+	
+}		
+	.card_linen{
+		background: #e8e2d3;
+		padding:20px;
+		width:320px;
+		height:480px;
+		line-height:1.8;
+		margin-bottom:20px;
+
+}
+		.card_white{
+			background: #fbf9f9;
+			padding:20px;
+			width:320px;
+			height:480px;
+			line-height:1.8;
+			margin-bottom:20px;
+		}
+		.card_amber{
+			background: #e3c9a8;
+			padding:20px;
+			width:320px;
+			height:480px;
+			line-height:1.8;
+			margin-bottom:20px;
+		}
+		
+		.kounouu{
+			display:flex;
+			justify-content:space-around;
+			gap:5px;
+		}
+		
+		.kounou{
+			border: #aaa 1px solid;
+			padding:2px 6px;
+		}
+		
+		.seriesname{
+			font-size:28px;
+			letter-spacing: 0.5em;
+			text-shadow: 1px 1px 2px silver;
+			font-family:"Gill Sans";
+		}
+		
+		
+		.review{
+			border: #ccc 1px solid;
+			padding:10px;
+			width:320px;
+			height:150px;
+			line-height:1.5;
+		}
+		
+		.rvw_title{
+			font-size:18px;
+			font-weight:bold;
+		}
+		.rvw_text{
+			font-size:14px;
+		}
+		
+		.viewmore {
+			margin-top:20px;
+			text-align:center;
+		}
+		
+		.btn-viewmore{
+			display:inline-block;
+			letter-spacing: 0.2em;
+			padding:16px;
+			text-decoration:none;
+			background: linear-gradient(to right,#eee 0%,#f9f9f9 55%,#f9f9f9 55%,#e8e8e8 100%);
+			border-bottom:solid 3px silver;
+			border-radius:5px;
+			font-size:26px;
+			text-shadow: 1px 1px 2px silver;
+			font-family:"Gill Sans";
+			text-align:center;
+			left:50%
+			margin-bottom:60px;
+		}
+		
+		.btn-viewmore:active{
+			/*ボタンを押した時*/
+			-webkit-transform:transleteY(3px);
+			transform:translateY(3px); /*下に動く*/
+			box-shadow:0px 0px 1px rgba(0,0,0,0.2);/*影を小さく*/
+			border-bottom:none;
+		}
+		
+		
+		
+	/*カテゴリー*/
+		
+.category{
+	flex-wrap:wrap;
+	display:flex;
+	justify-content:center;
+	position:relative;
+	gap:16px;
+	width:75%;
+	margin:0 auto;
+}	
+
+
+.category_items{
+	border:10px solid;
+	border-image:linear-gradient(to right bottom,#faf6f6,#e1dfdf)1/10px;
+	box-shadow:0 0 4px 2px rgba(162,162,162,0.3);
+	text-align:center;
+	width:200px;
+}
+
+.category p{
+	font-size:20px;
+	margin:-15px auto 5px auto;
+}		
+
+.category_vm{
+	width:180px;
+
+	display:inline-block;
+	margin-top:13px;
+	position:relative;
+}
+.cate_vm{
+	display:inline-block;	
+	
+	letter-spacing: 0.1em;
+	line-height:1.5;
+	font-size:26px;
+	text-shadow: 1px 1px 2px silver;
+	font-family:"Gill Sans";
+	padding-top:32px;
+	padding-right:56px;
+	height:180px;
+	
+}
+
+
+			
+.yajirushi{
+		position:absolute;
+		z-index:1;
+		bottom:36px;
+		right:24px;
+			
+		}
+		
+		
+	/*ランキング*/
+		
+.ranking{
+	display: flex;
+	justify-content:space-evenly;
+	text-align:center;
+	padding-top:10px ;
+	width:100%;
+}
+		
+.ranking p {
+	margin-top:10px;
+}
+	
+.vm{
+	text-align:center;
+	position: relative;
+	margin-top:40px;
+}
+		
+.vm p{
+	position: absolute;
+	z-index: 1;
+	letter-spacing: 0.2em;
+	font-size:26px;
+	text-shadow: 1px 1px 2px silver;
+	font-family:"Gill Sans";
+	top:27%;
+	left:41%;
+}		
+				
+		/*おすすめの使い方*/		
+		
+.howtouse{
+	text-align:center;
+	margin-bottom:64px;
+		}
+		
+	/*特別価格*/		
+		
+.special-price_items{
+	padding-top:32px;
+	width:100%;
+	gap:5px;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	
+}
+		
+			
+		
+.sp_{
+	
+	font-size: 22px;
+	text-shadow: 1px 1px 2px silver;
+	font-family:"Gill Sans";
+	font-style:italic;
+	
+}		
+		
+
+.triangle_l{
+	background:#e8e2d3;
+	width:320px;
+	height: calc(150px / 2);
+	clip-path: polygon(0 0,100% 0, 50% 100%);
+	margin:-20px auto 85px auto;
+}
+		
+.triangle_w{		
+	background: #fbf9f9;
+	width:320px;
+	height: calc(150px / 2);
+	clip-path: polygon(0 0,100% 0, 50% 100%);
+	margin:-20px auto 85px auto;
+	
+}
+		
+.triangle_a{		
+	background: #e3c9a8;
+	width:320px;
+	height: calc(150px / 2);
+	clip-path: polygon(0 0,100% 0, 50% 100%);
+	margin:-20px auto 85px auto;
+
+}
+		
+.off_img{	
+	position: absolute;
+	bottom:26%;
+	right:30px;
+	width:95px;
+	height:95px;
+	z-index:1;
+	
+}		
+		
+.off_1, .off_2{
+	width:280px;
+	height:95px;
+	border: #e8e2d3 14px solid;
+	padding:0 10px;
+	margin:0 auto;
+}	
+		
+.off_3, .off_4{
+	width:280px;
+	height:95px;
+	border: #fbf9f9 14px solid;
+	padding:0 10px;
+	margin:0 auto;
+}		
+		
+.off_5, .off_6{
+	width:280px;
+	height:95px;
+	border: #e3c9a8 14px solid;
+	padding:0 10px;
+	margin:0 auto;
+}		
+		
+.off_1,.off_3,.off_5{		
+	margin-top:-45px
+}
+		
+.off_2,.off_4,.off_6{		
+	margin-bottom:60px;
+	margin-top:5px;
+}		
+		
+		
+		
+		
+.sp_title{			
+	font-size:20px;
+	text-shadow: 1px 1px 2px silver;
+	font-family:"Gill Sans";
+	font-style:italic;
+	text-align:left;
+	padding-top:5px;
+	letter-spacing: 0.1em;
+}		
+		
+.sp_price{		
+	font-size:45px;
+	text-shadow: 1px 1px 2px silver;
+	font-family:"Gill Sans";
+	font-style:italic;
+	letter-spacing: 0.1em;
+	text-align:right;
+	margin-bottom:100px;
+	margin-top:-5px;
+}		
+			
+		
+	/*成分へのこだわり*/		
+		
+.about{
+	display:flex;
+	justify-content:center;
+	padding:24px 124px 64px 124px;
+	gap:5px;
+	text-align:center;
+	line-height:2.0;
+}
+			
+.aboutthing1, .aboutthing2,.aboutthing3,.aboutthing4{
+	position: relative;			
+}			
+
+.about_p_1,.about_p_2,.about_p_3,.about_p_4{
+	font-size:24px;
+	position:absolute;
+	z-index:1;
+	bottom:45%;
+	padding-left:34%;
+}
+			
+.about_p_2{	
+	padding-left:30%;
+}
+			
+.about_p_3{	
+	padding-left:26%;
+	bottom:38%;
+	line-height:1.3;
+}
+			
+.about_p_4{	
+	padding-left:30%;
+	bottom:38%;
+	line-height:1.3;
+}
+			
+.about_organic{			
+	text-align:center;
+	padding-bottom:60px;
+	line-height:2.0;
+}
+		
+	/*よくある質問*/		
+		
+.faq{
+	padding-top:64px;
+	text-align:center;
+		
+	padding-bottom:80px;
+	
+}
+		
+	nav{ 
+		padding: 0.5em 1em;
+		margin: 0 80px 2em 80px;
+		color: #444;
+		background: #fff;
+		font-size: 24px;
+		text-shadow: 1px 1px 2px silver;
+		line-height:2.0;
+		display: none; 
+		text-align:center;
+		border-left: solid 10px #eff2ef;
+		border-bottom: solid 2px #eff2ef;
+		text-decoration:underline;
+	}		
+		
+	.nav-open{
+		margin:64px 80px 0 80px;
+		padding: 32px;
+		color: #444;
+		font-size: 26px;
+		background: #eff2ef;
+		text-shadow: 2px 2px 2px silver;
+		font-style: italic;
+		position: relative;
+	}
+	.nav-open::before{/* 閉じている時 */
+		content: "＋";
+		position: absolute;
+		right: 20px;
+		font-style: normal;
+	}
+	.nav-open.active::before{/* 開いている時 */
+		content: "－";
+		font-style: normal;
+	}
+		
+	/*お問い合わせはこちら*/		
+		
+.contact{
+	display: flex;
+	justify-content: center;
+	padding-bottom:64px;
+	gap:16px;
+}		
+	
+.tel,.mail,.line{	
+	border:#e1e1e1 1px solid;
+	border-radius:6px;	
+	padding:20px;
+	box-shadow:0 0 4px 2px rgba(162,162,162,0.3);
+	text-align:center;
+	width:280px;
+	height:400px;
+	
+}
+	
+.contact p{
+	color: #444;
+	font-size: 24px;
+	text-shadow: 2px 2px 2px silver;
+	line-height:3.6;
+	
+}
+	
+.tel p{
+	line-height:3.6;
+}	
+			
+.tel img{
+	padding-bottom:17px;
+}
+
+p.contact_item{
+	line-height:3.0;
+}
+
+.teltaiou p{
+	font-size:14px;
+	line-height:1.6;
+}
+			
+.teltaiou p span{
+	font-size:20px;
+	
+}			
+			
+			
+p.time{	
+	font-size:18px;
+	
+}
+	
+.mail img{
+	padding:20px;
+}
+		
+.line img{
+	padding:8px;
+}
+
+p.otomodachi{
+	background-color:#909090;
+	line-height:2.5;
+	width:132px;
+	margin:26px auto 18px auto;
+	font-size:16px;
+	color:#fff;
+	letter-spacing: 0.1em;
+}
+			
+			
+			
+			
+	/*フッター*/		
+		
+footer{
+	text-align:center;
+	padding: 40px 0;
+	font-family:"Gill Sans";
+}
+		
+.text-nav3{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	font-size: 12pt;
+	color:#444;
+	background-color: #eff2ef;
+	padding:26px 100px;
+	text-align:center;
+}
+			
+			
+footer p{
+	background-color: #dfe8df;
+	padding:30px;
+}
+
+
+
+/*ここからタブレットサイズ（画面の横幅が560px〜959px）*/
+
+@media screen and (max-width: 959px){
+
+.text-nav{
+	font-size:18px;
+}
+
+.main_text{
+	width:40%;
+	bottom:30%;
+}
+
+.message p {
+	font-size:14px;
+	line-height:1.8;
+}
+
+.card_linen,.card_white,.card_amber{
+	width:240px;
+	height:330px;
+}
+
+.card_linen p,.card_white p,.card_amber p{
+	font-size:14px;
+}
+
+.review{
+	width:240px;
+}
+.rvw_title{
+	font-size:14px;
+}
+.rvw_text{
+	font-size:12px;
+}
+.review img{
+	width:80%;
+}
+
+.viewmore{
+	width:96%;
+	
+}
+.viewmore a{
+	font-size:14px;
+}
+
+.special-price_items{
+
+gap:5px;
+}
+
+.triangle_l,.triangle_w,.triangle_a{
+	width:240px;
+}
+
+.off_img{
+	width:64px;
+	height:64px;
+	bottom:30%;
+}
+.off_1,.off_2,.off_3,.off_4,.off_5,.off_6{
+	width:200px;
+	height:80px;
+}
+.sp_title{
+	font-size:14px;
+}
+.sp_price{
+	font-size:32px;
+}
+
+
+.about{
+	padding:24px 30px 64px 30px;
+}
+.about_p_1,.about_p_2,.about_p_3,.about_p_4{
+	font-size:17px;
+}
+
+nav{
+	font-size:16px;
+	margin: 0 40px 2em 40px;
+}
+.nav-open{
+	font-size:20px;
+	margin:64px 40px 0 40px;
+}
+
+
+.tel,.mail,.line{
+	height:320px;
+}
+.tel img{
+	width:42px;
+}
+.mail img{
+	width:88px;
+}
+.line img{
+	width:72px;
+}
+.contact p{
+	font-size:20px;
+}
+.teltaiou p{
+	font-size:10px;
+}
+.teltaiou p span{
+	font-size:16px;
+}
+p.time{	
+	font-size:14px;
+}
+p.otomodachi{
+	font-size:14px;
+}
+
+.text-nav3{
+	font-size:14px;
+}
+
+@media screen and (max-width: 765px){
+.main_text{
+	width:30%;
+	bottom:40%;
+}
+}
+
+
+/* スマホ */
+@media (max-width: 600px) {
+  .series,.ranking,.special-price_items,.contact {
+    flex-direction: column;
+	align-items: center;  /*中央寄せにできました＼(^o^)／*/
+  }
+}
+
+
+
+/*ここからSPサイズ（画面の横幅が559pxまで）*/
+
+@media screen and (max-width: 559px){
+
+.text-nav{
+	font-size:12px;
+}
+.text-nav2{
+	font-size:10px;
+}
+.main_text{
+	width:30%;
+	bottom:50%;
+}
+
+.message {
+	padding:100px 0px; 
+	
+}
+.message p {
+	font-size:10px;
+}
+
+.viewmore{
+	padding-bottom:20px;
+}
+
+
+.about{
+	padding:24px 0 64px 0;
+}
+
+.about_p_1,.about_p_2,.about_p_3,.about_p_4{
+	font-size:12px;
+}
+
+.about_organic{			
+	font-size:12px;
+	line-height:1.8;
+}
+
+nav{
+	font-size:14px;
+	margin: 0 10px 2em 10px;
+}
+.nav-open{
+	font-size:16px;
+	margin:64px 10px 0 10px;
+}
+.text-nav3{
+	font-size:12px;
+	padding:26px 20px;
+}
