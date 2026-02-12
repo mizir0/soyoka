@@ -1,6 +1,8 @@
 ![LP Preview](./lp-preview.jpg)
 
+
 ---
+
 
 # 🌿 Natural Skin Care LP
 
@@ -8,7 +10,14 @@
 忙しい毎日を送る30代女性のための  
 **自然派・無添加スキンケアブランドLP（架空案件）**
 
+
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
+
+
 ---
+
 
 ## 🧑‍🦰 Target Persona
 
@@ -20,7 +29,9 @@
 - 仕事と育児の両立でストレス過多
 - 「せめて肌だけはきれいでいたい」と願っている
 
+
 ---
+
 
 ## 🎯 Project Purpose
 
@@ -28,25 +39,33 @@
 - 自然・無添加・やさしさを伝える世界観設計
 - スマホユーザーを想定したCV導線設計
 
+
 ---
 
+
 ## 🎨 Design Concept
+
 
 ### 🌿 Color
 ベージュ・くすみグリーンを基調に  
 「安心感」「自然」「癒し」を表現。
 
+
 ### ✨ Layout
 余白を広く取り、  
 忙しい日常の中でも“呼吸できる”印象を設計。
+
 
 ### 📱 Responsive
 スマートフォン閲覧を想定し  
 3スクロール以内にCTAを配置。
 
+
 ---
 
+
 ## 🛠 Skills / Tools
+
 
 - HTML
 - CSS
@@ -54,21 +73,30 @@
 - slick.js
 - レスポンシブ対応
 
+
 ---
+
 
 ## 🔗 Live Site
 
+
 👉 https://mizir0.github.io/practice-site/
 
+
 ---
+
 
 ## 📌 Source Code
 
+
 👉 https://github.com/mizir0/practice-site
+
 
 ---
 
+
 ## 🚀 Future Improvements
+
 
 - レビューセクション強化
 - CTA文言のABテスト設計
