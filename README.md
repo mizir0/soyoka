@@ -89,7 +89,7 @@
 ## 🔗 Live Site
 
 
-👉 https://mizir0.github.io/practice-site/
+👉 https://mizir0.github.io/soyoka/
 
 
 ---
@@ -98,7 +98,7 @@
 ## 📌 Source Code
 
 
-👉 https://github.com/mizir0/practice-site
+👉 https://github.com/mizir0/soyoka
 
 
 ---
