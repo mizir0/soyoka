@@ -10,7 +10,7 @@ img{
 }
 
 body {
-    font-family: "小塚ゴシック Pr6N","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    font-family: "小塚ゴシック Pr6N","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Shippori Mincho", sans-serif, Verdana, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
 	color:#555;
 	background-color: #fff;
 	margin: 0;
@@ -60,15 +60,54 @@ a{
 
 .main{
 	position:relative;
-	text-align:center;
+	width: 100%;
+	height: 100vh; /* 画面いっぱいの高さ */
+	background: url("images/main_visual.jpg") no-repeat center / cover;
+	display: flex;
+	align-items:center;/* 上下中央 */
 }
 
-.main_text{
-	position:absolute;
-	z-index:1;
-	bottom:200px;
-	left:40px;
-	width:80%;
+.main_content{
+	margin-left:10%;
+	color:#3B6657;
+	text-align:left;
+}
+
+/* 縦書き部分 */
+.main_copy{
+	display:block;
+	writing-mode:vertical-rl;
+	font-family:"Shippori Mincho", serif; /* Google Fonts等で設定 */
+	font-size:40px;
+	letter-spacing:0.3em;
+	line-height:2;
+	margin-left: 500px; /* ここでお好みの位置まで数値を大きくする */
+    float: none;        /* floatを解除する */
+}
+
+/* 横書きベネフィット */
+.benefit_text{
+	display:block;
+	font-size:28px;
+	line-height:2;
+	letter-spacing:0.3em;
+	margin-bottom:20px;
+}
+
+.cta_button{
+	margin-left:2%;
+	font-size:24px;
+	display:inline-block;
+	padding:40px 100px;
+	background-color:#7aa874;
+	color:#fff;
+	letter-spacing:0.3em;
+	border-radius:4px;
+	transition:0.3s;
+}
+
+.cta_button:hover{
+	opacity:0.8;
 }
 
 	/*代表あいさつ*/		/*訂正しています*/
@@ -699,6 +738,66 @@ footer p{
 	font-size:18px;
 }
 
+
+@media screen and (max-width: 834px) {
+  .main {
+    /* 新しい画像を指定 */
+    background-image: url("images/main_visual_tb.jpg");
+    background-size: contain;
+    background-position: center top; /* 画像の上部を基準にする */
+    
+    /* スマホの画面いっぱいに表示 */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    /* 中身を縦に並べる設定 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 左右中央 */
+    padding: 50px 0 40px; /* 上下に余白を作る */
+  }
+
+  .main_content {
+    /* 画像の上の余白部分に文字が来るように調整 */
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit_text {
+    /* 100%植物由来〜 の横書きテキスト */
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    color: #3B6657; /* サイトのメインカラー */
+  }
+
+  .main_copy {
+    /* そよ風のように〜 の縦書きテキスト */
+    writing-mode: vertical-rl;
+    font-size: 32px;
+    letter-spacing: 0.3em;
+    height: 500px; /* 縦書きが収まる高さを確保 */
+	margin-left: -60px; /* マイナスの値を指定して左へスライド */
+    position: relative;
+    z-index: 10;
+  }
+
+  .cta_button {
+    /* View more ボタン */
+    position: absolute; /* ボタンだけは画像の下の方に固定 */
+    font-size:24px;
+	bottom: 4%;
+    width: 80%;
+    height: 56px;
+	text-align:center;
+	left: 50%;
+    transform: translateX(-50%); /* 左右中央に固定 */
+  }
+}
+
 .main_text{
 	width:40%;
 	bottom:30%;
@@ -835,6 +934,63 @@ p.otomodachi{
 /*ここからSPサイズ（画面の横幅が559pxまで）*/
 
 @media screen and (max-width: 559px){
+  .main {
+    /* 新しい画像を指定 */
+    background-image: url("images/main_visual_mb.jpg");
+    background-size: cover;
+    background-position: center top; /* 画像の上部を基準にする */
+    
+    /* スマホの画面いっぱいに表示 */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    /* 中身を縦に並べる設定 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 左右中央 */
+    padding: 32px 0; /* 上下に余白を作る */
+  }
+
+  .main_content {
+    /* 画像の上の余白部分に文字が来るように調整 */
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit_text {
+    /* 100%植物由来〜 の横書きテキスト */
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #3B6657; /* サイトのメインカラー */
+  }
+
+  .main_copy {
+    /* そよ風のように〜 の縦書きテキスト */
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    letter-spacing: 0.3em;
+    height: 300px; /* 縦書きが収まる高さを確保 */
+	margin-left: -40px; /* マイナスの値を指定して左へスライド */
+    position: relative;
+    z-index: 10;
+  }
+
+  .cta_button {
+    /* View more ボタン */
+    position: absolute; /* ボタンだけは画像の下の方に固定 */
+    font-size:16px;
+	bottom: 0px;
+    width: 96%;
+    height: 20px;
+	left: 50%;
+    transform: translateX(-50%); /* 左右中央に固定 */
+  }
+
+
 
 .text-nav{
 	font-size:12px;
